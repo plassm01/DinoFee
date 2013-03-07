@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * @author  JFee
+ * @author    JFee
  */
 @XmlRootElement (name="note")
 @XmlType ( name="note", propOrder={"id", "content"})
@@ -19,7 +19,7 @@ public interface Note extends Serializable
 	@XmlElement (name="content")
 	public String getContent();
 	/**
-	 * @param content
+	 * @param  content
 	 * @uml.property  name="content"
 	 */
 	public void setContent(String content);

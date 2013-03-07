@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * @author  JFee
+ * @author    JFee
  */
 @XmlRootElement (name="notebook")
 @XmlType (name="notebook", propOrder={"id", "title", "note"})
@@ -20,7 +20,7 @@ public interface Notebook extends Serializable
 	@XmlElement (name="id")
 	public String getId();
 	/**
-	 * @param id
+	 * @param  id
 	 * @uml.property  name="id"
 	 */
 	public void setId(String id);
@@ -35,7 +35,7 @@ public interface Notebook extends Serializable
 	@XmlElement (name="title")
 	public String getTitle();
 	/**
-	 * @param title
+	 * @param  title
 	 * @uml.property  name="title"
 	 */
 	public void setTitle(String title);

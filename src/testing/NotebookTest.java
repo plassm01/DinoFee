@@ -13,9 +13,11 @@ import org.junit.Test;
 import api.Note;
 import api.Notebook;
 
+/**
+ * @author  JFee
+ */
 public class NotebookTest
 {
-	
 	private ArrayList<Note> notes;
 	private Notebook book;
 	private static int i = 0;

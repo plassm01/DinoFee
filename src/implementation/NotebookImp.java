@@ -14,9 +14,8 @@ import api.Notebook;
 
 
 /**
- *Notebook with unique String id, unique String title and Notes associated with it. 
- * @author JFee
- *
+ * Notebook with unique String id, unique String title and Notes associated with it. 
+ * @author  JFee
  */
 @XmlRootElement (name="notebook")
 @XmlType (name="notebook", propOrder={"id", "title", "note"})
@@ -28,12 +27,12 @@ public class NotebookImp implements Notebook, Serializable
 	private String title;
 	
 	
+	
 	@XmlElement (name="id")
 	public String getId()
 	{
 		return id;
-	}
-	
+	}	
 	public void setId(String id)
 	{
 		this.id = id;
@@ -56,7 +55,6 @@ public class NotebookImp implements Notebook, Serializable
 	{
 		return title;
 	}
-	
 	public void setTitle(String title)
 	{
 		this.title = title;

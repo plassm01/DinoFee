@@ -18,10 +18,11 @@ import utilities.NotebookNotFoundException;
 
 
 
+/**
+ * @author  JFee
+ */
 public class DirectoryTest
 {
-	
-	
 	DirectoryImp d = DirectoryImp.INSTANCE;
 
 	@Before

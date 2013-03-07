@@ -8,10 +8,8 @@ import api.Note;
 
 
 /**
- *This is a note implementation for the DiNo project. It has a unique integer id and contains
- *content in the form of a String. 
- * @author JFee
- *
+ * This is a note implementation for the DiNo project. It has a unique integer id and contains content in the form of a String. 
+ * @author  JFee
  */
 @XmlRootElement (name="note")
 @XmlType ( name="note", propOrder={"id", "content"})
@@ -31,7 +29,6 @@ public class NoteImp implements Note
 		this.content = content;
 	}
 	
-
 	@XmlElement (name="id")
 	public int getId()
 	{

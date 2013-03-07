@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import utilities.NotebookAlreadyExistsException;
 import utilities.NotebookNotFoundException;
@@ -12,8 +13,7 @@ import api.Directory;
 import api.Notebook;
 
 /**
- * @author JFee
- *
+ * @author  JFee
  */
 public class DirectoryImp implements Directory
 {
@@ -22,8 +22,7 @@ public class DirectoryImp implements Directory
 	private DirectoryImp(){};
 	
 	//the directory backed by HashMap
-	
-	private Map<String, Notebook> db = Collections.synchronizedMap(new HashMap<String, Notebook>());
+	private Map<String, Notebook> db = new ConcurrentHashMap<String, Notebook>();
 	
 	
 

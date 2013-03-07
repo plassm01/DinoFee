@@ -8,9 +8,12 @@ import org.junit.Test;
 
 import api.Note;
 
+/**
+ * @author  JFee
+ */
 public class NoteTest
 {
-	
+
 	private Note note;
 
 	@Before
